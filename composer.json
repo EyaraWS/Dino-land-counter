@@ -1,0 +1,23 @@
+{
+    "require": {
+        "php": "^8.0",
+        "ext-readline": "*"
+    },
+    "require-dev": {
+        "infection/infection": "^0.22.1",
+        "phpunit/phpunit": "^9"
+    },
+    "type": "project",
+    "name": "globalis/technical-test",
+    "description": "Technical test for Globalis",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    }
+}

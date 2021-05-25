@@ -1,0 +1,19 @@
+{
+    "source": {
+        "directories": [
+            "src"
+        ]
+    },
+    "phpUnit": {
+        "configDir": "."
+    },
+    "mutators": {
+        "@default": true,
+        "@cast": false
+    },
+    "logs": {
+        "text": "coverage/infection.log",
+        "summary": "coverage/summary.log",
+        "perMutator": "coverage/per-mutator.md"
+    }
+}

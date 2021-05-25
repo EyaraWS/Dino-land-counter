@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+    php:
+        container_name: globalis-php
+        image: webdevops/php:8.0-alpine
+        volumes:
+            - ../:/app
+            - ./entrypoint/98-permissions.sh:/opt/docker/provision/entrypoint.d/98-permissions.sh
+            - ./entrypoint/99-composer.sh:/opt/docker/provision/entrypoint.d/99-composer.sh
+        working_dir: /app
+        env_file:
+            - ../.php.env
+            - ../.env

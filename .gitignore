@@ -1,0 +1,9 @@
+.*.env
+.idea
+.env
+
+vendor/
+coverage/
+
+.phpunit.result.cache
+phpunit.xml
